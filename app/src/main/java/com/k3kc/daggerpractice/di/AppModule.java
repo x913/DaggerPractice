@@ -13,16 +13,7 @@ public class AppModule {
     }
 
     @Provides
-    static boolean getApp(Application application) {
-        return application == null;
+    static boolean hello() {
+        return true;
     }
-
-    @Provides
-    static int someInt(String string) {
-        if(string.equals("this is a test string")) {
-            return 1;
-        }
-        return 0;
-    }
-
 }
